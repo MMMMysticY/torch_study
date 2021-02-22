@@ -2,6 +2,12 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+#文字补充：
+# PyTorch中已经为我们准备好了现成的网络模型，只要继承nn.Module，并实现它的forward方法，
+# PyTorch会根据autograd，自动实现backward函数，在forward函数中可使用任何tensor支持的函数，
+# 还可以使用if、for循环、print、log等Python语法，写法和标准的Python写法一致。
+
+
 #按照nn进行网络搭建
 
 class Net(nn.Module):
